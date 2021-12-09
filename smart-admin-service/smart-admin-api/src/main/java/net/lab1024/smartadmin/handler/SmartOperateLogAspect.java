@@ -98,7 +98,13 @@ public class SmartOperateLogAspect {
                 sw.close();
             }
             UserOperateLogEntity operateLogEntity =
-                UserOperateLogEntity.builder().userId(requestToken.getRequestUserId()).userName(requestToken.getEmployeeBO().getActualName()).url(request.getRequestURI()).method(operateMethod).param(params).failReason(failReason).result(result).build();
+                UserOperateLogEntity
+                        .builder()
+                        .userId(requestToken.getRequestUserId())
+                        .userName(requestToken.getEmployeeBO().getActualName())
+                        .url(request.getRequestURI()).method(operateMethod).param(params)
+                        .failReason(failReason).result(result)
+                        .build();
             ApiOperation apiOperation = this.getApiOperation(joinPoint);
             if (apiOperation != null) {
                 operateLogEntity.setContent(apiOperation.value());
@@ -163,5 +169,4 @@ public class SmartOperateLogAspect {
         }
         return null;
     }
-
 }

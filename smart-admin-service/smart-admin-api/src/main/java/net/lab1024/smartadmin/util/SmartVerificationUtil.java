@@ -89,6 +89,9 @@ public class SmartVerificationUtil {
 
 
     public static void main(String[] args) {
+        /**
+         * 正则校验
+         */
         boolean matches = Pattern.matches(INTEGER, "1");
         System.out.println(matches);
     }

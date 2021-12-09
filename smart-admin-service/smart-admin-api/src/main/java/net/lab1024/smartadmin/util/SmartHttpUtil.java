@@ -32,6 +32,14 @@ import java.util.Map.Entry;
  */
 public class SmartHttpUtil {
 
+    /**
+     * 发送get 请求
+     * @param url 路径
+     * @param params 参数
+     * @param header 头部
+     * @return 返回信息string类型
+     * @throws Exception
+     */
     public static String sendGet(String url, Map<String, String> params, Map<String, String> header) throws Exception {
         HttpGet httpGet = null;
         String body = "";

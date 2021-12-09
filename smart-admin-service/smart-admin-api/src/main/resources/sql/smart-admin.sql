@@ -13,9 +13,9 @@
 
 
 -- 导出 smart-admin-dev 的数据库结构
-DROP DATABASE IF EXISTS `smart-admin-dev`;
-CREATE DATABASE IF NOT EXISTS `smart-admin-dev` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `smart-admin-dev`;
+-- DROP DATABASE IF EXISTS `smart-admin-dev`;
+-- CREATE DATABASE IF NOT EXISTS `smart-admin-dev` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+-- USE `smart-admin-dev`;
 
 -- 导出  表 smart-admin-dev.t_department 结构
 DROP TABLE IF EXISTS `t_department`;
