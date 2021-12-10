@@ -32,7 +32,7 @@ public class SmartBeanUtil {
         }
         try {
             T newInstance = target.newInstance();
-            copyProperties(source, newInstance);
+            BeanUtils.copyProperties(source, newInstance);
             return newInstance;
         } catch (Exception e) {
             throw new RuntimeException(e);

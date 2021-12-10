@@ -82,6 +82,15 @@ public class SmartHttpUtil {
         return body;
     }
 
+
+    /**
+     * 发送post方式 json
+     * @param url 路径
+     * @param json json请求参数
+     * @param header 头部
+     * @return 返回参数string
+     * @throws Exception
+     */
     public static String sendPostJson(String url, String json, Map<String, String> header) throws Exception {
         HttpPost httpPost = null;
         String body = "";
@@ -117,6 +126,14 @@ public class SmartHttpUtil {
         return body;
     }
 
+    /**
+     * 发送post方式  map参数封装
+     * @param url 路径
+     * @param params 参数  map封装
+     * @param header 头部
+     * @return 返回string返回值
+     * @throws Exception
+     */
     public static String sendPostForm(String url, Map<String, String> params, Map<String, String> header) throws Exception {
         HttpPost httpPost = null;
         String body = "";
